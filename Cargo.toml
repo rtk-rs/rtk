@@ -5,6 +5,7 @@ license = "MIT OR Apache-2.0"
 authors = ["Guillaume W. Bres <guillaume.bressaix@gmail.com>"]
 description = "GNSS position solver"
 homepage = "https://github.com/rtk-rs/solver"
+documentation = "https://docs.rs/gnss-rtk/"
 repository = "https://github.com/rtk-rs/solver"
 keywords = ["timing", "positioning", "gps", "glonass", "galileo"]
 categories = ["science", "science::geo"]
