@@ -1,0 +1,23 @@
+[package]
+name = "rtk-solver"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+authors = ["Guillaume W. Bres <guillaume.bressaix@gmail.com>"]
+description = "GNSS position solver"
+homepage = "https://github.com/rtk-rs/rtk"
+documentation = "https://docs.rs/rtk-solver/"
+repository = "https://github.com/rtk-rs/rtk"
+keywords = ["timing", "positioning", "gps", "glonass", "galileo"]
+categories = ["science", "science::geo"]
+edition = "2021"
+readme = "README.md"
+
+[dependencies]
+log = "0.4"
+thiserror = "1"
+nalgebra = "=0.32"
+nyx-space = "2.0.0-alpha.2" 
+hifitime = { version = "3.8.4", features = ["serde", "std"] }
+gnss-rs = { version = "2.1", features = ["serde"] }
+rinex = { version = "0.15", features = ["serde", "obs", "nav"] }
+serde = { version = "1.0", optional = true, default-features = false, features = ["derive"] }
